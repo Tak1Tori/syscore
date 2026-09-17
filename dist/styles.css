@@ -23,3 +23,4 @@ h1{word-spacing:.075em}.visual-caption{font-size:12px;letter-spacing:.7px}.small
 .section-menu a:focus-visible,.section-menu button:focus-visible{outline-color:var(--mint)}
 .education-grid>*,.learning-path article>div,.contact>*,.section-heading>*,.brand-assets>*{min-width:0}
 @media(max-width:700px){.education-grid,.section-heading,.contact,.partnership-note{grid-template-columns:minmax(0,1fr)}.education-statement>p{font-size:clamp(31px,10.5vw,44px)}.education-statement{padding:28px}.visual-caption{flex-wrap:wrap}.hero-focus{margin-left:0}.hero-bottom{justify-content:space-between}.menu-toggle{min-width:43px}}
+h2{word-spacing:.07em}.brand-dialog-top h2{letter-spacing:-.03em}
