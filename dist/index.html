@@ -1,48 +1,268 @@
 <!doctype html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#173b3b">
   <title>Syscore — кибербезопасность начинается с ядра</title>
-  <meta name="description" content="Syscore — проект центра кибербезопасности: мониторинг и анализ угроз, реагирование на инциденты, защита данных и практическое обучение.">
+  <meta name="description"
+    content="Syscore — проект центра кибербезопасности: мониторинг и анализ угроз, реагирование на инциденты, защита данных и практическое обучение.">
   <meta property="og:title" content="Syscore — System Security Core">
   <meta property="og:description" content="Защита цифровой инфраструктуры. Развитие компетенций в кибербезопасности.">
   <meta property="og:type" content="website">
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23142d38'/%3E%3Ccircle cx='32' cy='32' r='21' fill='none' stroke='%236fe0b5' stroke-width='4'/%3E%3Cpath d='M40 23H28a6 6 0 000 12h8a6 6 0 010 12H23' transform='translate(0 -3)' fill='none' stroke='%236fe0b5' stroke-width='4'/%3E%3C/svg%3E">
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23142d38'/%3E%3Ccircle cx='32' cy='32' r='21' fill='none' stroke='%236fe0b5' stroke-width='4'/%3E%3Cpath d='M40 23H28a6 6 0 000 12h8a6 6 0 010 12H23' transform='translate(0 -3)' fill='none' stroke='%236fe0b5' stroke-width='4'/%3E%3C/svg%3E">
   <link rel="stylesheet" href="styles.css">
   <script src="app.js" defer></script>
 </head>
+
 <body>
   <a class="skip-link" href="#main">Перейти к содержанию</a>
   <header class="site-header">
-    <a class="brand" href="#home" aria-label="Syscore — на главную"><img class="brand-image" src="assets/syscore-horizontal.webp" width="2172" height="724" alt="Syscore — System Security Core"></a>
-    <nav class="desktop-nav" aria-label="Основная навигация"><a href="#services">Направления</a><a href="#about">О проекте</a><a href="#education">Образование</a></nav>
-    <div class="header-actions"><a class="contact-link" href="#contact">Контакты <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></a><button class="menu-toggle" aria-label="Открыть меню разделов" aria-controls="section-menu" aria-expanded="false"><span></span><span></span></button></div>
+    <a class="brand" href="#home" aria-label="Syscore — на главную"><img class="brand-image"
+        src="assets/syscore-horizontal.webp" width="2172" height="724" alt="Syscore — System Security Core"></a>
+    <nav class="desktop-nav" aria-label="Основная навигация"><a href="#services">Направления</a><a href="#about">О
+        проекте</a><a href="#education">Образование</a></nav>
+    <div class="header-actions"><a class="contact-link" href="#contact">Контакты <svg viewBox="0 0 24 24"
+          aria-hidden="true">
+          <path d="M5 19 19 5M5 5h14v14" />
+        </svg></a><button class="menu-toggle" aria-label="Открыть меню разделов" aria-controls="section-menu"
+        aria-expanded="false"><span></span><span></span></button></div>
   </header>
   <main id="main">
     <section class="hero" id="home" aria-labelledby="hero-title">
-      <div class="hero-copy"><h1 id="hero-title">Безопасность<br>начинается<br>с <span>ядра.</span></h1><p>Защита цифровой инфраструктуры.<br>Развитие компетенций в кибербезопасности.</p><a class="button button-dark" href="#services">Открыть направления <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a></div>
-      <div class="hero-visual"><img src="assets/syscore-vertical-3d.webp" alt="Объёмный знак Syscore: мятное технологическое ядро в графитовом кольце" width="1254" height="1254" fetchpriority="high"><div class="visual-caption"><span>ТЕХНОЛОГИИ. ЛЮДИ. ДОВЕРИЕ.</span><span>SYSCORE / KZ</span></div></div>
-      <div class="hero-bottom"><p>Самостоятельный проект<br>центра кибербезопасности</p><div class="hero-focus"><span>01 / Защита бизнеса</span><span>02 / Подготовка специалистов</span></div><a class="scroll-link" href="#services" aria-label="Перейти к направлениям"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v16m-6-6 6 6 6-6"/></svg></a></div>
+      <div class="hero-copy">
+        <h1 id="hero-title">Безопасность<br>начинается<br>с <span>ядра</span></h1>
+        <p>Защита цифровой инфраструктуры.<br>Развитие компетенций в кибербезопасности.</p><a class="button button-dark"
+          href="#services">Открыть направления <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M5 12h14m-6-6 6 6-6 6" />
+          </svg></a>
+      </div>
+      <div class="hero-visual"><img src="assets/syscore-vertical-3d.webp"
+          alt="Объёмный знак Syscore: мятное технологическое ядро в графитовом кольце" width="1254" height="1254"
+          fetchpriority="high">
+        <div class="visual-caption"><span>ТЕХНОЛОГИИ. ЛЮДИ. ДОВЕРИЕ.</span><span>SYSCORE / KZ</span></div>
+      </div>
+      <div class="hero-bottom">
+        <p>Самостоятельный проект<br>центра кибербезопасности</p>
+        <div class="hero-focus"><span>01 / Защита бизнеса</span><span>02 / Подготовка специалистов</span></div><a
+          class="scroll-link" href="#services" aria-label="Перейти к направлениям"><svg viewBox="0 0 24 24"
+            aria-hidden="true">
+            <path d="M12 4v16m-6-6 6 6 6-6" />
+          </svg></a>
+      </div>
     </section>
     <section class="section services" id="services" aria-labelledby="services-title">
-      <div class="section-heading"><span class="section-label">01 / НАПРАВЛЕНИЯ</span><div><h2 id="services-title">Увидеть угрозу.<br><span class="muted">Выстроить защиту.</span></h2><p class="section-intro">Шесть направлений, которые формируют основу Syscore — от анализа событий до развития культуры безопасности.</p></div></div>
-      <div class="services-content"><aside class="services-aside"><span class="small-note">ПЛАНИРУЕМЫЕ УСЛУГИ</span><p>Защита начинается<br>с понимания<br>вашего бизнеса.</p><span class="aside-detail">Для малого и среднего бизнеса, финансовых, сервисных и образовательных организаций.</span></aside><div class="service-list">
-        <details class="service" name="services" open><summary><span class="service-number">01</span><h3>Мониторинг и анализ угроз</h3><span class="service-toggle" aria-hidden="true"></span></summary><div class="service-body"><p>Наблюдение за событиями безопасности, анализ журналов и выявление подозрительной активности. Основа для своевременного обнаружения инцидентов.</p><div class="tags"><span>SOC</span><span>SIEM</span><span>Анализ событий</span></div></div></details>
-        <details class="service" name="services"><summary><span class="service-number">02</span><h3>Разведка киберугроз</h3><span class="service-toggle" aria-hidden="true"></span></summary><div class="service-body"><p>Сбор и сопоставление сведений об угрозах, работа с индикаторами компрометации и обогащение событий. Контекст, который помогает расставить приоритеты защиты.</p><div class="tags"><span>Threat Intelligence</span><span>TIP</span><span>IOC</span></div></div></details>
-        <details class="service" name="services"><summary><span class="service-number">03</span><h3>Реагирование на инциденты</h3><span class="service-toggle" aria-hidden="true"></span></summary><div class="service-body"><p>Анализ причин инцидента, сбор технических артефактов и подготовка сценариев реагирования. Рекомендации по локализации угрозы и восстановлению работы.</p><div class="tags"><span>Incident Response</span><span>Расследование</span><span>Playbooks</span></div></div></details>
-        <details class="service" name="services"><summary><span class="service-number">04</span><h3>Защита инфраструктуры и данных</h3><span class="service-toggle" aria-hidden="true"></span></summary><div class="service-body"><p>Настройка средств защиты, укрепление конфигураций и контроль уязвимостей. Отдельное внимание — рабочим станциям, персональным данным и предотвращению утечек.</p><div class="tags"><span>EDR / DLP</span><span>Hardening</span><span>Защита данных</span></div></div></details>
-        <details class="service" name="services"><summary><span class="service-number">05</span><h3>Аудит и управление рисками</h3><span class="service-toggle" aria-hidden="true"></span></summary><div class="service-body"><p>Оценка текущего состояния безопасности, разработка внутренних политик и приоритизация рисков. Понятные рекомендации для технических специалистов и руководства.</p><div class="tags"><span>GRC</span><span>Политики ИБ</span><span>Оценка рисков</span></div></div></details>
-        <details class="service" name="services"><summary><span class="service-number">06</span><h3>Обучение и практикумы</h3><span class="service-toggle" aria-hidden="true"></span></summary><div class="service-body"><p>Практическая подготовка будущих специалистов и обучение сотрудников организаций. Лабораторные задания, обезличенные кейсы и работа под руководством наставников.</p><div class="tags"><span>SOC-практикумы</span><span>Наставничество</span><span>Кибергигиена</span></div></div></details>
-      </div></div>
+      <div class="section-heading"><span class="section-label">01 / НАПРАВЛЕНИЯ</span>
+        <div>
+          <h2 id="services-title">Увидеть угрозу<br><span class="muted">Выстроить защиту</span></h2>
+          <p class="section-intro">Шесть направлений, которые формируют основу Syscore — от анализа событий до развития
+            культуры безопасности.</p>
+        </div>
+      </div>
+      <div class="services-content">
+        <aside class="services-aside"><span class="small-note">ПЛАНИРУЕМЫЕ УСЛУГИ</span>
+          <p>Защита начинается<br>с понимания<br>вашего бизнеса.</p><span class="aside-detail">Для малого и среднего
+            бизнеса, финансовых, сервисных и образовательных организаций.</span>
+        </aside>
+        <div class="service-list">
+          <details class="service" name="services" open>
+            <summary><span class="service-number">01</span>
+              <h3>Мониторинг и анализ угроз</h3><span class="service-toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="service-body">
+              <p>Наблюдение за событиями безопасности, анализ журналов и выявление подозрительной активности. Основа для
+                своевременного обнаружения инцидентов.</p>
+              <div class="tags"><span>SOC</span><span>SIEM</span><span>Анализ событий</span></div>
+            </div>
+          </details>
+          <details class="service" name="services">
+            <summary><span class="service-number">02</span>
+              <h3>Разведка киберугроз</h3><span class="service-toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="service-body">
+              <p>Сбор и сопоставление сведений об угрозах, работа с индикаторами компрометации и обогащение событий.
+                Контекст, который помогает расставить приоритеты защиты.</p>
+              <div class="tags"><span>Threat Intelligence</span><span>TIP</span><span>IOC</span></div>
+            </div>
+          </details>
+          <details class="service" name="services">
+            <summary><span class="service-number">03</span>
+              <h3>Реагирование на инциденты</h3><span class="service-toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="service-body">
+              <p>Анализ причин инцидента, сбор технических артефактов и подготовка сценариев реагирования. Рекомендации
+                по локализации угрозы и восстановлению работы.</p>
+              <div class="tags"><span>Incident Response</span><span>Расследование</span><span>Playbooks</span></div>
+            </div>
+          </details>
+          <details class="service" name="services">
+            <summary><span class="service-number">04</span>
+              <h3>Защита инфраструктуры и данных</h3><span class="service-toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="service-body">
+              <p>Настройка средств защиты, укрепление конфигураций и контроль уязвимостей. Отдельное внимание — рабочим
+                станциям, персональным данным и предотвращению утечек.</p>
+              <div class="tags"><span>EDR / DLP</span><span>Hardening</span><span>Защита данных</span></div>
+            </div>
+          </details>
+          <details class="service" name="services">
+            <summary><span class="service-number">05</span>
+              <h3>Аудит и управление рисками</h3><span class="service-toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="service-body">
+              <p>Оценка текущего состояния безопасности, разработка внутренних политик и приоритизация рисков. Понятные
+                рекомендации для технических специалистов и руководства.</p>
+              <div class="tags"><span>GRC</span><span>Политики ИБ</span><span>Оценка рисков</span></div>
+            </div>
+          </details>
+          <details class="service" name="services">
+            <summary><span class="service-number">06</span>
+              <h3>Обучение и практикумы</h3><span class="service-toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="service-body">
+              <p>Практическая подготовка будущих специалистов и обучение сотрудников организаций. Лабораторные задания,
+                обезличенные кейсы и работа под руководством наставников.</p>
+              <div class="tags"><span>SOC-практикумы</span><span>Наставничество</span><span>Кибергигиена</span></div>
+            </div>
+          </details>
+        </div>
+      </div>
     </section>
-    <section class="about" id="about" aria-labelledby="about-title"><div class="about-inner"><span class="section-label">02 / О ПРОЕКТЕ</span><div class="about-main"><h2 id="about-title">Технологии сильнее,<br>когда за ними —<br><span>подготовленные люди.</span></h2><div class="about-text"><p>Syscore — проект самостоятельного центра информационной безопасности в Казахстане. В его основе — объединение прикладных задач бизнеса и практической подготовки специалистов.</p><p>Развиваем модель, в которой анализ угроз, защита инфраструктуры и обучение дополняют друг друга. От понимания риска — к осмысленным действиям.</p></div></div><div class="principles"><div><span>01</span><h3>Конфиденциальность</h3><p>Бережная работа с данными<br>и разграничение доступа.</p></div><div><span>02</span><h3>Прозрачность</h3><p>Согласованный объём работ<br>и понятная отчётность.</p></div><div><span>03</span><h3>Практический подход</h3><p>Рекомендации, связанные<br>с задачами организации.</p></div></div></div></section>
-    <section class="section education" id="education" aria-labelledby="education-title"><div class="section-heading"><span class="section-label">03 / ОБРАЗОВАНИЕ</span><div><h2 id="education-title">Из знаний —<br><span class="muted">в компетенции.</span></h2><p class="section-intro">Планируем образовательную среду, где теория встречается с задачами кибербезопасности.</p></div></div><div class="education-grid"><div class="education-statement"><span class="small-note">ПРАКТИКА В ОСНОВЕ ОБУЧЕНИЯ</span><p>Учиться.<br>Исследовать.<br><span>Защищать.</span></p><div class="education-disciplines">SOC · Incident Response<br>Threat Intelligence · GRC</div></div><div class="learning-path"><article><span class="path-number">01</span><div><h3>Погружение в инструменты</h3><p>Лабораторные стенды, профильные курсы и знакомство с процессами центра мониторинга.</p></div></article><article><span class="path-number">02</span><div><h3>Работа с практическими кейсами</h3><p>Анализ логов, разбор обезличенных инцидентов и технические отчёты под контролем наставника.</p></div></article><article><span class="path-number">03</span><div><h3>Собственные прикладные проекты</h3><p>Исследования, курсовые и дипломные работы на основе задач информационной безопасности.</p></div></article></div></div><div class="partnership-note"><span>Образовательное сотрудничество</span><p>Проект предусматривает взаимодействие с МУИТ и профессиональным сообществом. Формат участия определяется отдельными соглашениями.</p></div></section>
-    <section class="contact section" id="contact" aria-labelledby="contact-title"><div class="contact-copy"><span class="section-label">04 / КОНТАКТЫ</span><h2 id="contact-title">Сильная защита<br>начинается<br><span>с диалога.</span></h2></div><div class="contact-information"><p class="contact-intro">Задачи бизнеса.<br>Образовательные инициативы.<br>Профессиональное сотрудничество.</p><div class="contact-status"><span class="small-note">ПРОЕКТ ГОТОВИТСЯ К ЗАПУСКУ</span><p>Контакты команды появятся здесь<br>после открытия центра.</p></div><span class="contact-location">Казахстан</span></div></section>
+    <section class="about" id="about" aria-labelledby="about-title">
+      <div class="about-inner"><span class="section-label">02 / О ПРОЕКТЕ</span>
+        <div class="about-main">
+          <h2 id="about-title">Технологии сильнее,<br>когда за ними —<br><span>подготовленные </span></h2>
+          <div class="about-text">
+            <p>Syscore — проект самостоятельного центра информационной безопасности в Казахстане. В его основе —
+              объединение прикладных задач бизнеса и практической подготовки специалистов.</p>
+            <p>Развиваем модель, в которой анализ угроз, защита инфраструктуры и обучение дополняют друг друга. От
+              понимания риска — к осмысленным действиям.</p>
+          </div>
+        </div>
+        <div class="principles">
+          <div><span>01</span>
+            <h3>Конфиденциальность</h3>
+            <p>Бережная работа с данными<br>и разграничение доступа.</p>
+          </div>
+          <div><span>02</span>
+            <h3>Прозрачность</h3>
+            <p>Согласованный объём работ<br>и понятная отчётность.</p>
+          </div>
+          <div><span>03</span>
+            <h3>Практический подход</h3>
+            <p>Рекомендации, связанные<br>с задачами организации.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section education" id="education" aria-labelledby="education-title">
+      <div class="section-heading"><span class="section-label">03 / ОБРАЗОВАНИЕ</span>
+        <div>
+          <h2 id="education-title">Из знаний —<br><span class="muted">в компетенции</span></h2>
+          <p class="section-intro">Планируем образовательную среду, где теория встречается с задачами кибербезопасности.
+          </p>
+        </div>
+      </div>
+      <div class="education-grid">
+        <div class="education-statement"><span class="small-note">ПРАКТИКА В ОСНОВЕ ОБУЧЕНИЯ</span>
+          <p>Учиться.<br>Исследовать.<br><span>Защищать.</span></p>
+          <div class="education-disciplines">SOC · Incident Response<br>Threat Intelligence · GRC</div>
+        </div>
+        <div class="learning-path">
+          <article><span class="path-number">01</span>
+            <div>
+              <h3>Погружение в инструменты</h3>
+              <p>Лабораторные стенды, профильные курсы и знакомство с процессами центра мониторинга.</p>
+            </div>
+          </article>
+          <article><span class="path-number">02</span>
+            <div>
+              <h3>Работа с практическими кейсами</h3>
+              <p>Анализ логов, разбор обезличенных инцидентов и технические отчёты под контролем наставника.</p>
+            </div>
+          </article>
+          <article><span class="path-number">03</span>
+            <div>
+              <h3>Собственные прикладные проекты</h3>
+              <p>Исследования, курсовые и дипломные работы на основе задач информационной безопасности.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+      <div class="partnership-note"><span>Образовательное сотрудничество</span>
+        <p>Проект предусматривает взаимодействие с МУИТ и профессиональным сообществом. Формат участия определяется
+          отдельными соглашениями.</p>
+      </div>
+    </section>
+    <section class="contact section" id="contact" aria-labelledby="contact-title">
+      <div class="contact-copy"><span class="section-label">04 / КОНТАКТЫ</span>
+        <h2 id="contact-title">Сильная защита<br>начинается<br><span>с диалога</span></h2>
+      </div>
+      <div class="contact-information">
+        <p class="contact-intro">Задачи бизнеса.<br>Образовательные инициативы.<br>Профессиональное сотрудничество.</p>
+        <div class="contact-status"><span class="small-note">ПРОЕКТ ГОТОВИТСЯ К ЗАПУСКУ</span>
+          <p>Контакты команды появятся здесь<br>после открытия центра.</p>
+        </div><span class="contact-location">Казахстан</span>
+      </div>
+    </section>
   </main>
-    <footer class="footer"><a href="#home" class="footer-wordmark" aria-label="Syscore — на главную">Syscore</a><div class="footer-middle"><span>System Security Core</span><span>© <span id="year">2026</span> Syscore</span></div><div class="footer-links"><button type="button" id="brand-open">Материалы бренда <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v12m-5-5 5 5 5-5M5 18v3h14v-3"/></svg></button><a href="#home">Наверх <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20V4m-6 6 6-6 6 6"/></svg></a></div></footer>
-  <dialog class="section-menu" id="section-menu" aria-labelledby="menu-title"><div class="menu-panel"><div class="menu-top"><p id="menu-title">SYSCORE / НАВИГАЦИЯ</p><button class="menu-close" aria-label="Закрыть меню"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M6 18 18 6"/></svg></button></div><nav aria-label="Разделы сайта"><a href="#home"><span>01</span>Главная<svg viewBox="0 0 24 24"><path d="M5 19 19 5M5 5h14v14"/></svg></a><a href="#services"><span>02</span>Направления<svg viewBox="0 0 24 24"><path d="M5 19 19 5M5 5h14v14"/></svg></a><a href="#about"><span>03</span>О проекте<svg viewBox="0 0 24 24"><path d="M5 19 19 5M5 5h14v14"/></svg></a><a href="#education"><span>04</span>Образование<svg viewBox="0 0 24 24"><path d="M5 19 19 5M5 5h14v14"/></svg></a><a href="#contact"><span>05</span>Контакты<svg viewBox="0 0 24 24"><path d="M5 19 19 5M5 5h14v14"/></svg></a></nav><div class="menu-bottom"><span>System Security Core</span><span>Казахстан</span></div></div></dialog>
-  <dialog class="brand-dialog" id="brand-dialog" aria-labelledby="brand-title"><div class="brand-dialog-top"><div><span class="small-note">SYSCORE / BRAND ASSETS</span><h2 id="brand-title">Два формата. Одно ядро.</h2></div><button id="brand-close" class="brand-close" aria-label="Закрыть материалы бренда"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M6 18 18 6"/></svg></button></div><div class="brand-assets"><article><div class="brand-preview"><img src="assets/syscore-horizontal.webp" alt="Горизонтальный логотип Syscore" width="2172" height="724" loading="lazy"></div><h3>Горизонтальный логотип</h3><p>PNG · прозрачный фон · 2172 × 724</p><a download="Syscore-horizontal.png" href="assets/syscore-horizontal.png">Скачать PNG <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v12m-5-5 5 5 5-5M5 18v3h14v-3"/></svg></a></article><article><div class="brand-preview"><img src="assets/syscore-vertical-3d.webp" alt="Объёмный вертикальный логотип Syscore" width="1254" height="1254" loading="lazy"></div><h3>Объёмный логотип</h3><p>PNG · белый фон · 1254 × 1254</p><a download="Syscore-3D.png" href="assets/syscore-vertical-3d.png">Скачать PNG <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v12m-5-5 5 5 5-5M5 18v3h14v-3"/></svg></a></article></div></dialog>
+  <footer class="footer"><a href="#home" class="footer-wordmark" aria-label="Syscore — на главную">Syscore</a>
+    <div class="footer-middle"><span>System Security Core</span><span>© <span id="year">2026</span> Syscore</span></div>
+
+  <dialog class="section-menu" id="section-menu" aria-labelledby="menu-title">
+    <div class="menu-panel">
+      <div class="menu-top">
+        <p id="menu-title">SYSCORE / НАВИГАЦИЯ</p><button class="menu-close" aria-label="Закрыть меню"><svg
+            viewBox="0 0 24 24" aria-hidden="true">
+            <path d="m6 6 12 12M6 18 18 6" />
+          </svg></button>
+      </div>
+      <nav aria-label="Разделы сайта"><a href="#home"><span>01</span>Главная<svg viewBox="0 0 24 24">
+            <path d="M5 19 19 5M5 5h14v14" />
+          </svg></a><a href="#services"><span>02</span>Направления<svg viewBox="0 0 24 24">
+            <path d="M5 19 19 5M5 5h14v14" />
+          </svg></a><a href="#about"><span>03</span>О проекте<svg viewBox="0 0 24 24">
+            <path d="M5 19 19 5M5 5h14v14" />
+          </svg></a><a href="#education"><span>04</span>Образование<svg viewBox="0 0 24 24">
+            <path d="M5 19 19 5M5 5h14v14" />
+          </svg></a><a href="#contact"><span>05</span>Контакты<svg viewBox="0 0 24 24">
+            <path d="M5 19 19 5M5 5h14v14" />
+          </svg></a></nav>
+      <div class="menu-bottom"><span>System Security Core</span><span>Казахстан</span></div>
+    </div>
+  </dialog>
+  <dialog class="brand-dialog" id="brand-dialog" aria-labelledby="brand-title">
+    <div class="brand-dialog-top">
+      <div><span class="small-note">SYSCORE / BRAND ASSETS</span>
+        <h2 id="brand-title">Два формата. Одно ядро.</h2>
+      </div><button id="brand-close" class="brand-close" aria-label="Закрыть материалы бренда"><svg viewBox="0 0 24 24"
+          aria-hidden="true">
+          <path d="m6 6 12 12M6 18 18 6" />
+        </svg></button>
+    </div>
+    <div class="brand-assets">
+      <article>
+        <div class="brand-preview"><img src="assets/syscore-horizontal.webp" alt="Горизонтальный логотип Syscore"
+            width="2172" height="724" loading="lazy"></div>
+        <h3>Горизонтальный логотип</h3>
+        <p>PNG · прозрачный фон · 2172 × 724</p><a download="Syscore-horizontal.png"
+          href="assets/syscore-horizontal.png">Скачать PNG <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 4v12m-5-5 5 5 5-5M5 18v3h14v-3" />
+          </svg></a>
+      </article>
+      <article>
+        <div class="brand-preview"><img src="assets/syscore-vertical-3d.webp"
+            alt="Объёмный вертикальный логотип Syscore" width="1254" height="1254" loading="lazy"></div>
+        <h3>Объёмный логотип</h3>
+        <p>PNG · белый фон · 1254 × 1254</p><a download="Syscore-3D.png" href="assets/syscore-vertical-3d.png">Скачать
+          PNG <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 4v12m-5-5 5 5 5-5M5 18v3h14v-3" />
+          </svg></a>
+      </article>
+    </div>
+  </dialog>
 </body>
+
 </html>
